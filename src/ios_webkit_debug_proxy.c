@@ -703,7 +703,7 @@ ws_status iwdp_on_list_request(ws_t ws, bool is_head, bool want_json) {
       if (!fe_file) {
         self->on_error(self, "Ignoring invalid frontend: %s\n", fe_url);
       }
-      if (asprintf(&frontend_url, "/devtools/%s", fe_file) < 0) {
+      if (asprintf(&frontend_url, "chrome-devtools://devtools/bundled/%s", fe_file) < 0) {
         return self->on_error(self, "asprintf failed");
       }
     }
