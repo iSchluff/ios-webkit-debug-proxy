@@ -43,6 +43,6 @@ AC_CHECK_FUNCS([memmove memset regcomp select socket stpcpy strcasecmp strncasec
 
 AC_CONFIG_FILES([Makefile src/Makefile include/Makefile examples/Makefile])
 
-CFLAGS="${CFLAGS} -Wall -Werror"
+CFLAGS="${CFLAGS} -Wall -Werror -lm"
 
 AC_OUTPUT

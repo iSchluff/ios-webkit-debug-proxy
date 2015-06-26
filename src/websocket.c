@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <arpa/inet.h>
 
 #include "websocket.h"
 #include "char_buffer.h"
@@ -853,4 +854,3 @@ void ws_free(ws_t self) {
     free(self);
   }
 }
-
